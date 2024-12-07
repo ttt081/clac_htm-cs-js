@@ -79,6 +79,11 @@ document.querySelector("#point").addEventListener("click", function () {
   curDisplay(currentDisplay);
 });
 
+document.querySelector("#del").addEventListener("click", function () {
+  currentDisplay = currentDisplay.slice(0, -1);
+  curDisplay(currentDisplay);
+});
+
 let result = 0;
 document.querySelector("#equal").addEventListener("click", function () {
   result = eval(currentDisplay);
